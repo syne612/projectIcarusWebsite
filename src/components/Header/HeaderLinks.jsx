@@ -90,20 +90,20 @@ class HeaderLinks extends React.Component {
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-linkedin"} />
+            <i className={classes.socialIcons + " fab fa-github"} />
           </Button>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
-          title="Follow us on facebook"
+          title="Check out our Github repo's"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/ellis.hogan.1"
+            href="https://github.com/syne612?tab=repositories"
             target="_blank"
             className={classes.navLink}
           >
@@ -114,7 +114,7 @@ class HeaderLinks extends React.Component {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Our Instagram is currently unavailable due to the recent FB/Instagram hack."
+          title="Follow us on Instagram"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >

@@ -28,7 +28,7 @@ class ProductSection extends React.Component {
         </GridContainer>
         <div>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={11}>
+          <GridItem xs={11}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
