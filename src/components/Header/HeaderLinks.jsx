@@ -17,6 +17,7 @@ import Close from "@material-ui/icons/Close";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Dialog from "@material-ui/core/Dialog";
+import GridItem from "components/Grid/GridItem.jsx";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
@@ -163,7 +164,7 @@ class HeaderLinks extends React.Component {
             <Close className={classes.modalClose} />
           </IconButton>
           <br />
-          <center><h2 className={classes.modalTitle, classes.hidden-xs}>Get in Contact</h2></center>
+          <GridItem xs={0} sm={12}> <center><h2 className={classes.modalTitle}>Get in Contact</h2></center></GridItem>
 
         </DialogTitle>
         <DialogContent
