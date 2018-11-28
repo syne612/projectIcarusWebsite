@@ -90,7 +90,7 @@ class HeaderLinks extends React.Component {
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-github"} />
+            <i className={classes.socialIcons + " fab fa-linkedin"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -107,7 +107,7 @@ class HeaderLinks extends React.Component {
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
+            <i className={classes.socialIcons + " fab fa-github"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -120,7 +120,7 @@ class HeaderLinks extends React.Component {
         >
           <Button
             color="transparent"
-            href=""
+            href="https://www.instagram.com/angel.icarus/"
             target="_blank"
             className={classes.navLink}
           >
