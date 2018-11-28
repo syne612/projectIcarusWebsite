@@ -65,27 +65,27 @@ class ProfilePage extends React.Component {
                     <div className={classes.name}>
                       <h3 className={classes.title}>Ellis Hogan</h3>
                       <h6>PROGRAMMER</h6>
-                      <a href="https://www.linkedin.com/in/ellis-hogan-99a646161/">
+                      <a target="_blank" href="https://www.linkedin.com/in/ellis-hogan-99a646161/">
                         <Button justIcon link className={classes.margin5}>
                           <i className={"fab fa-linkedin"} />
                         </Button>
                       </a>
-                      <a href="https://github.com/syne612">
+                      <a target="_blank" href="https://github.com/syne612">
                         <Button justIcon link className={classes.margin5}>
                           <i className={"fab fa-github"} />
                         </Button>
                       </a>
-                      <a href="https://bitbucket.org/angel-icaurs/">
+                      <a target="_blank" href="https://bitbucket.org/angel-icaurs/">
                         <Button justIcon link className={classes.margin5}>
                           <i className={"fab fa-bitbucket"} />
                         </Button>
                       </a>
-                      <a href="https://facebook.com/ellis.hogan.1">
+                      <a target="_blank" href="https://facebook.com/ellis.hogan.1">
                         <Button justIcon link className={classes.margin5}>
                           <i className={"fab fa-facebook"} />
                         </Button>
                       </a>
-                      <a href="https://codepen.io/ellis-hogan/">
+                      <a target="_blank" href="https://codepen.io/ellis-hogan/">
                         <Button justIcon link className={classes.margin5}>
                           <i className={"fab fa-codepen"} />
                         </Button>

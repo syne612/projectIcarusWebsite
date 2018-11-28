@@ -6,9 +6,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import { Link } from "react-router-dom";
 
-import ArtTrack from "@material-ui/icons/ViewQuilt";
-import Palette from "@material-ui/icons/Palette";
-import Description from "@material-ui/icons/Description";
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -16,10 +13,8 @@ import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import profile from "assets/img/Ellis.jpg";
 
 import studio1 from "assets/img/project1.png";
 import studio2 from "assets/img/project2.png";
@@ -31,7 +26,6 @@ import studio7 from "assets/img/project7.png";
 import studio8 from "assets/img/project8.png";
 import studio9 from "assets/img/project9.png";
 import studio10 from "assets/img/project10.png";
-import Resume from "assets/img/Ellis-Hogan.jpg";
 
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
@@ -100,19 +94,19 @@ class GalleryPage extends React.Component {
 
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
-                            <a href="http://www.buylandnc.com">
+                            <a target="_blank" href="http://www.buylandnc.com">
                             <img
                               alt="..."
                               src={studio3}
                               className={navImageClasses}
                             /></a>
-                              <a href="http://www.georgialotliquidation.com" >
+                              <a target="_blank" href="http://www.georgialotliquidation.com" >
                               <img
                                 alt="..."
                                 src={studio2}
                                 className={navImageClasses}
                               /></a>
-                              <a href="http://www.rvcoastalmaine.com">
+                              <a target="_blank" href="http://www.rvcoastalmaine.com">
                               <img
                                 alt="..."
                                 src={studio7}
@@ -120,19 +114,19 @@ class GalleryPage extends React.Component {
                               /></a>
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
-                            <a href="http://www.strengthwithfitness.com">
+                            <a target="_blank" href="http://www.strengthwithfitness.com">
                             <img
                               alt="..."
                               src={studio4}
                               className={navImageClasses}
                             /></a>
-                            <a href="http://www.wearsweatlock.com">
+                            <a target="_blank" href="http://www.wearsweatlock.com">
                             <img
                               alt="..."
                               src={studio1}
                               className={navImageClasses}
                             /></a>
-                            <a href="http://www.nccoastallotliquidation.com">
+                            <a target="_blank" href="http://www.nccoastallotliquidation.com">
                               <img
                                 alt="..."
                                 src={studio9}
@@ -146,19 +140,19 @@ class GalleryPage extends React.Component {
                               src={studio8}
                               className={navImageClasses}
                             /></a>
-                              <a href="http://www.ncmountainlandsale.com">
+                              <a target="_blank" href="http://www.ncmountainlandsale.com">
                               <img
                                 alt="..."
                                 src={studio5}
                                 className={navImageClasses}
                               /></a>
-                              <a href="http://www.nclotliquidation.com">
+                              <a target="_blank" href="http://www.nclotliquidation.com">
                               <img
                                 alt="..."
                                 src={studio10}
                                 className={navImageClasses}
                               /></a>
-                              <a href="http://www.webpro360.com">
+                              <a target="_blank" href="http://www.webpro360.com">
                               <img
                                 alt="..."
                                 src={studio6}
