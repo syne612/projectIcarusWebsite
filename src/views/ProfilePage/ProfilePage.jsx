@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import ArtTrack from "@material-ui/icons/ViewQuilt";
-import Palette from "@material-ui/icons/Palette";
 import Description from "@material-ui/icons/Description";
 // core components
 import Header from "components/Header/Header.jsx";
@@ -22,23 +21,11 @@ import SectionCarousel from "./Sections/SectionCarousel.jsx";
 
 import profile from "assets/img/Ellis.jpg";
 
-import studio1 from "assets/img/project1.png";
-import studio2 from "assets/img/project2.png";
-import studio3 from "assets/img/project3.png";
-import studio4 from "assets/img/project4.png";
-import studio5 from "assets/img/project5.png";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
 import Resume from "assets/img/Ellis-Hogan.jpg";
 import FCC1 from "assets/img/FCC1.png";
 import FCC2 from "assets/img/FCC2.png";
 import FCC3 from "assets/img/FCC3.png";
 import FCC4 from "assets/img/FCC4.png";
-import Dashboard from "@material-ui/icons/Dashboard";
-import Build from "@material-ui/icons/Build";
 import List from "@material-ui/icons/List";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";

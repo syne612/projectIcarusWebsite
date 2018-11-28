@@ -81,7 +81,7 @@ class TeamSection extends React.Component {
             <br />
               <h4 className={classes.cardTitle}>Check out the site I just upgraded from.</h4>
               <CardBody className={classes.imgRaised}>
-                <a href=""><img width="100%" src={Icarus} /></a>
+                <a href=""><img width="100%" alt="" src={Icarus} /></a>
               </CardBody>
             </GridItem>
           </GridContainer>
