@@ -20,7 +20,7 @@ class WorkSection extends React.Component {
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
-          <GridItem cs={12} sm={12} md={8}>
+          <GridItem xs={11} sm={11} md={8}>
             <h2 className={classes.title}>Get in Contact</h2>
             <div className={classes.centered}> <Button
               justIcon
@@ -37,7 +37,7 @@ class WorkSection extends React.Component {
 > 704-839-1628 </p></div>
             <form>
               <GridContainer>
-                <GridItem xs={11} md={6}>
+                <GridItem xs={12} md={6}>
                   <CustomInput
                     labelText="Your Name"
                     id="name"
@@ -46,7 +46,7 @@ class WorkSection extends React.Component {
                     }}
                   />
                 </GridItem>
-                <GridItem xs={11} md={6}>
+                <GridItem xs={12} md={6}>
                   <CustomInput
                     labelText="Your Email"
                     id="email"
@@ -67,7 +67,7 @@ class WorkSection extends React.Component {
                     rows: 5
                   }}
                 />
-                  <GridItem xs={11} sm={11} md={4}
+                  <GridItem xs={12} sm={12} md={4}
                     className={classes.textCenter}
                   >
                     <Button color="primary">Send Message</Button>

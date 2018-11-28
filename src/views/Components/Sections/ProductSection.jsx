@@ -19,7 +19,7 @@ class ProductSection extends React.Component {
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={8}>
+          <GridItem xs={11} md={8}>
             <h2 className={classes.title}>How I Design</h2>
             <h5 className={classes.description}>
               This new site is build compleatly in JavaScript and JS librarys (react.js, node.js), and JavaScript (node.js react.js redux, epress, mongoDB, mongoose) is what I currently am spending the most time in, but I have plenty experiance working with HTML, CSS, PHP, and WordPress as well.
