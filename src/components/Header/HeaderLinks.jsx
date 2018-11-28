@@ -163,7 +163,7 @@ class HeaderLinks extends React.Component {
             <Close className={classes.modalClose} />
           </IconButton>
           <br />
-          <center><h2 className={classes.modalTitle}>Get in Contact</h2></center>
+          <center><h2 className={classes.modalTitle, classes.hidden-xs}>Get in Contact</h2></center>
 
         </DialogTitle>
         <DialogContent
