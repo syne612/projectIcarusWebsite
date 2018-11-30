@@ -24,19 +24,21 @@ class WorkSection extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+
   }
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
-  async handleSubmit(e) {
+async handleSubmit(e) {
     e.preventDefault()
     const {name, email, message } = this.state
-    const form = await axios.post ('/api/form', {
-      name,
-      email,
-      message
-    });
-  }
+
+  const form = await axios.post ('/api/form', {
+    name,
+    email,
+    message
+  });
+}
   render() {
     const { classes } = this.props;
     return (
@@ -57,7 +59,7 @@ class WorkSection extends React.Component {
             ><i className={classes.socials + " fas fa-phone"} />
           </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
-            <form>
+<form onSubmit={this.handleSubmit}>
               <GridContainer>
                 <GridItem xs={12} md={6}>
                   <CustomInput
@@ -95,7 +97,7 @@ class WorkSection extends React.Component {
                   <GridItem xs={12} sm={12} md={4}
                     className={classes.textCenter}
                   >
-                  <Button color="primary" >Send Message</Button>
+                  <Button color="primary" type="submit">Send Message</Button>
                   </GridItem>
               </GridContainer>
             </form>
