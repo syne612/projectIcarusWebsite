@@ -97,7 +97,7 @@ async handleSubmit(e) {
                   <GridItem xs={12} sm={12} md={4}
                     className={classes.textCenter}
                   >
-                  <Button color="primary" type="submit">Send Message</Button>
+                  <Button color="primary" >Send Message</Button>
                   </GridItem>
               </GridContainer>
             </form>
