@@ -15,21 +15,23 @@ import workStyle from "assets/jss/material-kit-react/views/landingPageSections/w
 import axios from 'axios';
 
 class WorkSection extends React.Component {
-  constructor(props) {
-    super(props);
-      this.state = {
-        name: '',
-        email: '',
-        message: ''
-      };
-      this.updateField = this.updateField.bind(this);
+  constructor(){
+    super()
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
     }
-updateField(input, value){
-  this.setState({[input]: value });
-}
-async handleSubmit(event){
-  event.precentDefault();
-  const {name, email, message} = this.state;
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+
+  }
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+async handleSubmit(e) {
+    e.preventDefault()
+    const {name, email, message } = this.state
 
   const form = await axios.post ('/api/form', {
     name,
@@ -55,49 +57,41 @@ async handleSubmit(event){
     </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
             <form onSubmit={this.handleSubmit}>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Your Name"
-                    id="name"
-                    type="text"
-                    name="name"
-                    value={this.state.name}
-                    onChange={(event) => this.updateField('name', event.target.value)}
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Your Email"
-                    id="email"
-                    type="email"
-                    name="email"
-                    value={this.state.email}
-                    onChange={(event) => this.updateField('email', event.target.value)}
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
+            <GridContainer>
+              <GridItem xs={12} md={6}>
                 <CustomInput
-                  labelText="Your Message"
-                  id="message"
-                  type="text"
-                  name="message"
-                  value={this.state.message}
-                  onChange={(event) => this.updateField('message', event.target.value)}
+                  labelText="Your Name"
+                  id="name"
+                  onChange={this.handleChange}
                   formControlProps={{
-                    fullWidth: true,
-                    className: classes.textArea
-                  }}
-                  inputProps={{
-                    multiline: true,
-                    rows: 5
+                    fullWidth: true
                   }}
                 />
+              </GridItem>
+              <GridItem xs={12} md={6}>
+                <CustomInput
+                  labelText="Your Email"
+                  id="email"
+                  onChange={this.handleChange}
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
+              </GridItem>
+              <CustomInput
+                labelText="Your Message"
+                id="message"
+                onChange={this.handleChange}
+                formControlProps={{
+                  fullWidth: true,
+                  className: classes.textArea
+                }}
+                inputProps={{
+                  multiline: true,
+                  rows: 5
+                }}
+              />
+
                 <GridContainer justify="center">
                   <GridItem
                     xs={12}
@@ -105,7 +99,7 @@ async handleSubmit(event){
                     md={4}
                     className={classes.textCenter}
                   >
-                    <Button color="primary" formValues={this.state} onClick={(event)=> this.onSubmit()} >Send Message</Button>
+                    <Button color="primary" >Send Message</Button>
                   </GridItem>
                 </GridContainer>
               </GridContainer>
