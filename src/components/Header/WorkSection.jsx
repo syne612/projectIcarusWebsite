@@ -31,7 +31,7 @@ class WorkSection extends React.Component {
   }
 async handleSubmit(e) {
     e.preventDefault()
-    const {name, email, message } = this.state
+    const {name, email, message } = this.state;
 
   const form = await axios.post ('/api/form', {
     name,
