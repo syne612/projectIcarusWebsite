@@ -30,8 +30,7 @@ class WorkSection extends React.Component {
         email: '',
         message: ''
       };
-      this.handleSubmit = this.handleSubmit.bind(this);
-      this.handleChange = this.handleChange.bind(this);
+      
 
     }
     handleSubmit = e => {
