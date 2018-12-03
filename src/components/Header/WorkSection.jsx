@@ -10,11 +10,9 @@ import classNames from "classnames";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Input from "@material-ui/core/Input";
+import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
-import axios from 'axios';
-import FormControl from "@material-ui/core/FormControl";
-import InputLabel from "@material-ui/core/InputLabel";
 
 
 const encode = (data) => {
@@ -73,65 +71,50 @@ class WorkSection extends React.Component {
     </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
             <form onSubmit={this.handleSubmit}>
-            <input type="hidden" name="form-name" value="contact1" />
+            <Input type="hidden" name="form-name" value="contact1" />
+
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
-                <Input
-                  className={classes.inputClasses}
-                  labelText="Name"
-                  id="nameM"
-                  type="text"
-                  name="nameM"
-                  placeholder="Name"
-                  value={nameM}
-                  onChange={this.handleChange}
-                  formControlProps={{
-                    fullWidth: true
-                  }}
-                />
+                  <CustomInput
+                    labelText="Your Name"
+                    id="nameM"
+                    type="text"
+                    name="nameM"
+                    value={nameM}
+                    handleChange={this.handleChange}
+                    formControlProps={{
+                        fullWidth: true
+                    }}
+                  />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
-                <FormControl className={classes.formControlClasses}>
-                  {emailM == undefined ? (
-                    <InputLabel
-                      className={classes.labelRoot}
-                      htmlFor="emailM"
-
-                    >Email
-                    </InputLabel>
-                  ) : null}
-                </FormControl>
-
-                <Input
-                  className={classes.underline, classes.input, classes.fullWidth}
-                  labelText="Email"
-                  id="emailM"
-                  type="email"
-                  name="emailM"
-                  placeholder="Email"
-                  value={emailM}
-                  onChange={this.handleChange}
-                  formControlProps={{
-                    fullWidth: true
-                  }}
-                />
+                  <CustomInput
+                    labelText="Your Email"
+                    id="emailM"
+                    type="email"
+                    name="emailM"
+                    value={emailM}
+                    handleChange={this.handleChange}
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
                 </GridItem>
-                <Input
-                  className={classes.textarea}
-                  labelText="Message"
+                <CustomInput
+                  labelText="Your Message"
                   id="messageM"
                   type="text"
                   name="messageM"
-                  placeholder = "Your Message"
                   value={messageM}
-                  onChange={this.handleChange}
-
-
+                  handleChange={this.handleChange}
+                  formControlProps={{
+                    fullWidth: true,
+                    className: classes.textArea
+                  }}
                   inputProps={{
                     multiline: true,
                     rows: 5
                   }}
-
                 />
                 <GridContainer justify="center">
                   <GridItem
