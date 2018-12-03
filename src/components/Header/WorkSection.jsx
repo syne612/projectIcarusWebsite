@@ -9,12 +9,11 @@ import classNames from "classnames";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
+import Input from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 import axios from 'axios';
-import Input from "@material-ui/core/Input";
-import Textarea from "@material-ui/core/Input";
+import Textarea from "@material-ui/core/Textarea";
 
 
 
@@ -29,10 +28,11 @@ class WorkSection extends React.Component {
   constructor(props) {
     super(props);
       this.state = {
-        nameM: 'Name',
-        emailM: 'Email',
-        messageM: 'Message'
+        nameM: '',
+        emailM: '',
+        messageM: ''
       };
+
       this.handleSubmit = this.handleSubmit.bind(this);
       this.handleChange = this.handleChange.bind(this);
 
@@ -72,15 +72,52 @@ class WorkSection extends React.Component {
     </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
             <form onSubmit={this.handleSubmit}>
-            <Input type="hidden" name="form-name" value="contact1" />
+            <input type="hidden" name="form-name" value="contact1" />
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
-                  <Input type="text" name="nameM" value={nameM} onChange={this.handleChange} />
+                <Input
+                  labelText="Name"
+                  id="nameM"
+                  type="text"
+                  name="nameM"
+                  value={nameM}
+                  onChange={this.handleChange}
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
-                <Input type="email" name="emailM" value={emailM} onChange={this.handleChange} />
+                <Input
+                  labelText="Email"
+                  id="emailM"
+                  type="email"
+                  name="emailM"
+                  value={emailM}
+                  onChange={this.handleChange}
+                  formControlProps={{
+                  fullWidth: true
+                }}
+                />
                 </GridItem>
-                <Textarea className={classes.textarea} name="messageM" value={messageM} onChange={this.handleChange} ></Textarea>
+                <Input
+                  className={classes.textarea}
+                  labelText="Message"
+                  id="messageM"
+                  type="text"
+                  name="messageM"
+                  value={messageM}
+                  onChange={this.handleChange}
+                  formControlProps={{
+                    fullWidth: true,
+                    className: classes.textArea
+                  }}
+                  inputProps={{
+                    multiline: true,
+                    rows: 5
+                  }}
+
+                />
                 <GridContainer justify="center">
                   <GridItem
                     xs={12}
