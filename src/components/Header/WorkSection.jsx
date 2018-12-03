@@ -13,7 +13,8 @@ import Input from "@material-ui/core/Input";
 import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 import axios from 'axios';
-
+import FormControl from "@material-ui/core/FormControl";
+import InputLabel from "@material-ui/core/InputLabel";
 
 
 const encode = (data) => {
@@ -30,6 +31,7 @@ class WorkSection extends React.Component {
         nameM: '',
         emailM: '',
         messageM: ''
+
       };
 
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -80,6 +82,7 @@ class WorkSection extends React.Component {
                   id="nameM"
                   type="text"
                   name="nameM"
+                  placeholder="Name"
                   value={nameM}
                   onChange={this.handleChange}
                   formControlProps={{
@@ -88,12 +91,24 @@ class WorkSection extends React.Component {
                 />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
+                <FormControl className={classes.formControlClasses}>
+                  {emailM == undefined ? (
+                    <InputLabel
+                      className={classes.labelRoot}
+                      htmlFor="emailM"
+
+                    >Email
+                    </InputLabel>
+                  ) : null}
+                </FormControl>
+
                 <Input
-                  className={classes.input}
+                  className={classes.underline, classes.input, classes.fullWidth}
                   labelText="Email"
                   id="emailM"
                   type="email"
                   name="emailM"
+                  placeholder="Email"
                   value={emailM}
                   onChange={this.handleChange}
                   formControlProps={{
@@ -107,12 +122,11 @@ class WorkSection extends React.Component {
                   id="messageM"
                   type="text"
                   name="messageM"
+                  placeholder = "Your Message"
                   value={messageM}
                   onChange={this.handleChange}
-                  formControlProps={{
-                    fullWidth: true,
-                    className: classes.textArea
-                  }}
+
+
                   inputProps={{
                     multiline: true,
                     rows: 5

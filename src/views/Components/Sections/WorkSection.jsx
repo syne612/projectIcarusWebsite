@@ -71,7 +71,7 @@ class WorkSection extends React.Component {
           </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
           <form onSubmit={this.handleSubmit}>
-          <input type="hidden" name="form-name" value="contact" />
+          <Input type="hidden" name="form-name" value="contact" />
 
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
@@ -80,7 +80,8 @@ class WorkSection extends React.Component {
                   id="name"
                   type="text"
                   name="name"
-                  value={name} onChange={this.handleChange}
+                  value={name}
+                  handleChange={this.handleChange}
                   formControlProps={{
                       fullWidth: true
                   }}
@@ -92,7 +93,8 @@ class WorkSection extends React.Component {
                   id="email"
                   type="email"
                   name="email"
-                  value={email} onChange={this.handleChange}
+                  value={email}
+                  handleChange={this.handleChange}
                   formControlProps={{
                     fullWidth: true
                   }}
@@ -103,7 +105,8 @@ class WorkSection extends React.Component {
                 id="message"
                 type="text"
                 name="message"
-                value={message} onChange={this.handleChange}
+                value={message}
+                handleChange={this.handleChange}
                 formControlProps={{
                   fullWidth: true,
                   className: classes.textArea

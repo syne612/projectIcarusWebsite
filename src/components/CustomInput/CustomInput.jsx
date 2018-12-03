@@ -17,14 +17,16 @@ function CustomInput({ ...props }) {
     formControlProps,
     labelText,
     id,
-    type,
+    value,
+    handleChange,
     name,
     labelProps,
     inputProps,
     error,
     white,
     inputRootCustomClasses,
-    success
+    success,
+
   } = props;
 
   const labelClasses = classNames({
@@ -73,8 +75,8 @@ function CustomInput({ ...props }) {
         }}
         id={id}
         name={name}
-        type={type}
-
+        value={props.value}
+        onChange={props.handleChange}
         {...inputProps}
       />
     </FormControl>
@@ -84,10 +86,10 @@ function CustomInput({ ...props }) {
 CustomInput.propTypes = {
   classes: PropTypes.object.isRequired,
   labelText: PropTypes.node,
+  value: PropTypes.string,
   labelProps: PropTypes.object,
   id: PropTypes.string,
   name: PropTypes.string,
-  type: PropTypes.string,
   inputProps: PropTypes.object,
   formControlProps: PropTypes.object,
   inputRootCustomClasses: PropTypes.string,
