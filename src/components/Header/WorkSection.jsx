@@ -30,14 +30,14 @@ class WorkSection extends React.Component {
         email: '',
         message: ''
       };
-      
+
 
     }
     handleSubmit = e => {
           fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
+            body: encode({ "form-name": "contact1", ...this.state })
           })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
