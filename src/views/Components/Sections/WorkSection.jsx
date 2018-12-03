@@ -72,52 +72,26 @@ class WorkSection extends React.Component {
           <form onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
 
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Name"
-                  id="name"
-                  type="text"
-                  name="name"
-                  value={name} onChange={this.handleChange}
-                  formControlProps={{
-                      fullWidth: true
-                  }}
-                />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Email"
-                  id="email"
-                  type="email"
-                  name="email"
-                  value={email} onChange={this.handleChange}
-                  formControlProps={{
-                    fullWidth: true
-                  }}
-                />
-              </GridItem>
-              <CustomInput
-                labelText="Your Message"
-                id="message"
-                type="text"
-                name="message"
-                value={message} onChange={this.handleChange}
-                formControlProps={{
-                  fullWidth: true,
-                  className: classes.textArea
-                }}
-                inputProps={{
-                  multiline: true,
-                  rows: 5
-                }}
-              />
-                  <GridItem xs={12} sm={12} md={4}
-                    className={classes.textCenter}
-                  >
-                    <Button color="primary" type="submit">Send Message</Button>
-                  </GridItem>
-              </GridContainer>
+          <form onSubmit={this.handleSubmit}>
+        <p>
+          <label>
+            Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message: <textarea name="message" value={message} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
             </form>
           </GridItem>
         </GridContainer>
