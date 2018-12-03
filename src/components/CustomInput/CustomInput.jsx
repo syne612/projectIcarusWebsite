@@ -17,6 +17,7 @@ function CustomInput({ ...props }) {
     formControlProps,
     labelText,
     id,
+    value,
     name,
     labelProps,
     inputProps,
@@ -72,6 +73,7 @@ function CustomInput({ ...props }) {
         }}
         id={id}
         name={name}
+        value={value}
         {...inputProps}
       />
     </FormControl>
