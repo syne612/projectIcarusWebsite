@@ -51,7 +51,7 @@ class WorkSection extends React.Component {
 
     render() {
     const { classes } = this.props;
-    const { name, email, message } = this.state;
+    const { nameM, emailM, messageM } = this.state;
 
     return (
       <div>
