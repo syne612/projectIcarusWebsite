@@ -75,6 +75,7 @@ class WorkSection extends React.Component {
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                 <Input
+                  className={classes.input}
                   labelText="Name"
                   id="nameM"
                   type="text"
@@ -88,6 +89,7 @@ class WorkSection extends React.Component {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
                 <Input
+                  className={classes.input}
                   labelText="Email"
                   id="emailM"
                   type="email"
