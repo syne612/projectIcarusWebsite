@@ -26,9 +26,9 @@ class WorkSection extends React.Component {
   constructor(props) {
     super(props);
       this.state = {
-        name: '',
-        email: '',
-        message: ''
+        name1: '',
+        email1: '',
+        message1: ''
       };
       this.handleSubmit = this.handleSubmit.bind(this);
       this.handleChange = this.handleChange.bind(this);
@@ -37,7 +37,7 @@ class WorkSection extends React.Component {
           fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
+            body: encode({ "form-name": "contact1", ...this.state })
           })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
@@ -50,7 +50,7 @@ class WorkSection extends React.Component {
   render() {
 
     const { classes } = this.props;
-    const { name, email, message } = this.state;
+    const { name1, email1, message1 } = this.state;
 
     return (
       <div className={classes.section}>
@@ -77,10 +77,10 @@ class WorkSection extends React.Component {
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Name"
-                  id="name"
+                  id="name1"
                   type="text"
-                  name="name"
-                  value={name}
+                  name="name1"
+                  value={name1}
                   handleChange={this.handleChange}
                   formControlProps={{
                       fullWidth: true
@@ -90,10 +90,10 @@ class WorkSection extends React.Component {
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Email"
-                  id="email"
+                  id="email1"
                   type="email"
-                  name="email"
-                  value={email}
+                  name="email1"
+                  value={email1}
                   handleChange={this.handleChange}
                   formControlProps={{
                     fullWidth: true
@@ -102,10 +102,10 @@ class WorkSection extends React.Component {
               </GridItem>
               <CustomInput
                 labelText="Your Message"
-                id="message"
+                id="message1"
                 type="text"
-                name="message"
-                value={message}
+                name="message1"
+                value={message1}
                 handleChange={this.handleChange}
                 formControlProps={{
                   fullWidth: true,

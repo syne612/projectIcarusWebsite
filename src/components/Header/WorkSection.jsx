@@ -26,9 +26,9 @@ class WorkSection extends React.Component {
   constructor(props) {
     super(props);
       this.state = {
-        nameM: '',
-        emailM: '',
-        messageM: ''
+        name: '',
+        email: '',
+        message: ''
 
       };
 
@@ -41,7 +41,7 @@ class WorkSection extends React.Component {
           fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact1", ...this.state })
+            body: encode({ "form-name": "contact", ...this.state })
           })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
@@ -53,7 +53,7 @@ class WorkSection extends React.Component {
 
     render() {
     const { classes } = this.props;
-    const { nameM, emailM, messageM } = this.state;
+    const { name, email, message } = this.state;
 
     return (
       <div>
@@ -77,10 +77,10 @@ class WorkSection extends React.Component {
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Your Name"
-                    id="nameM"
+                    id="name"
                     type="text"
-                    name="nameM"
-                    value={nameM}
+                    name="name"
+                    value={name}
                     handleChange={this.handleChange}
                     formControlProps={{
                         fullWidth: true
@@ -90,10 +90,10 @@ class WorkSection extends React.Component {
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Your Email"
-                    id="emailM"
+                    id="email"
                     type="email"
-                    name="emailM"
-                    value={emailM}
+                    name="email"
+                    value={email}
                     handleChange={this.handleChange}
                     formControlProps={{
                       fullWidth: true
@@ -102,10 +102,10 @@ class WorkSection extends React.Component {
                 </GridItem>
                 <CustomInput
                   labelText="Your Message"
-                  id="messageM"
+                  id="message"
                   type="text"
-                  name="messageM"
-                  value={messageM}
+                  name="message"
+                  value={message}
                   handleChange={this.handleChange}
                   formControlProps={{
                     fullWidth: true,
