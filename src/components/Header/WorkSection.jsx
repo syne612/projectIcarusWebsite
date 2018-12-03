@@ -14,6 +14,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 import axios from 'axios';
 import Input from "@material-ui/core/Input";
+import Textarea from "@material-ui/core/Input";
 
 
 
@@ -28,9 +29,9 @@ class WorkSection extends React.Component {
   constructor(props) {
     super(props);
       this.state = {
-        nameM: '',
-        emailM: '',
-        messageM: ''
+        nameM: 'Name',
+        emailM: 'Email',
+        messageM: 'Message'
       };
       this.handleSubmit = this.handleSubmit.bind(this);
       this.handleChange = this.handleChange.bind(this);
@@ -71,15 +72,15 @@ class WorkSection extends React.Component {
     </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
             <form onSubmit={this.handleSubmit}>
-            <input type="hidden" name="form-name" value="contact1" />
+            <Input type="hidden" name="form-name" value="contact1" />
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
-                  <input type="text" name="nameM" value={nameM} onChange={this.handleChange} />
+                  <Input type="text" name="nameM" value={nameM} onChange={this.handleChange} />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
-                <input type="email" name="emailM" value={emailM} onChange={this.handleChange} />
+                <Input type="email" name="emailM" value={emailM} onChange={this.handleChange} />
                 </GridItem>
-                <textarea name="messageM" value={messageM} onChange={this.handleChange} />
+                <Textarea className={classes.textarea} name="messageM" value={messageM} onChange={this.handleChange} ></Textarea>
                 <GridContainer justify="center">
                   <GridItem
                     xs={12}
