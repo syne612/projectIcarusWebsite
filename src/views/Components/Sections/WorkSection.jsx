@@ -35,7 +35,7 @@ class WorkSection extends React.Component {
             ><i className={classes.socials + " fas fa-phone"} />
           </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
-            <form>
+            <form name="contactW" method="POST" netlify>
               <GridContainer>
                 <GridItem xs={12} md={6}>
                   <CustomInput
@@ -70,7 +70,7 @@ class WorkSection extends React.Component {
                   <GridItem xs={12} sm={12} md={4}
                     className={classes.textCenter}
                   >
-                    <Button color="primary">Send Message</Button>
+                    <Button color="primary" type="submit">Send Message</Button>
                   </GridItem>
               </GridContainer>
             </form>

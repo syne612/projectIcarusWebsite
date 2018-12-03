@@ -54,7 +54,7 @@ async handleSubmit(event){
       ><i className={classes.socials + " fas fa-phone"} />
     </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
-            <form onSubmit={this.handleSubmit}>
+            <form name="contact" method="POST" netlify>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
@@ -62,8 +62,7 @@ async handleSubmit(event){
                     id="name"
                     type="text"
                     name="name"
-                    value={this.state.name}
-                    onChange={(event) => this.updateField('name', event.target.value)}
+
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -75,8 +74,7 @@ async handleSubmit(event){
                     id="email"
                     type="email"
                     name="email"
-                    value={this.state.email}
-                    onChange={(event) => this.updateField('email', event.target.value)}
+
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -87,8 +85,6 @@ async handleSubmit(event){
                   id="message"
                   type="text"
                   name="message"
-                  value={this.state.message}
-                  onChange={(event) => this.updateField('message', event.target.value)}
                   formControlProps={{
                     fullWidth: true,
                     className: classes.textArea
@@ -105,7 +101,7 @@ async handleSubmit(event){
                     md={4}
                     className={classes.textCenter}
                   >
-                    <Button color="primary" formValues={this.state} onClick={(event)=> this.onSubmit()} >Send Message</Button>
+                    <Button color="primary" type="submit" >Send Message</Button>
                   </GridItem>
                 </GridContainer>
               </GridContainer>
