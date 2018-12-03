@@ -70,6 +70,8 @@ class WorkSection extends React.Component {
           </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
           <form onSubmit={this.handleSubmit}>
+          <input type="hidden" name="form-name" value="contact" />
+
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput

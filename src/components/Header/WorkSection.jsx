@@ -13,6 +13,8 @@ import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 import axios from 'axios';
+import Input from "@material-ui/core/Input";
+
 
 
 const encode = (data) => {
@@ -69,6 +71,7 @@ class WorkSection extends React.Component {
     </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
             <form onSubmit={this.handleSubmit}>
+            <input type="hidden" name="form-name" value="contact" />
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
