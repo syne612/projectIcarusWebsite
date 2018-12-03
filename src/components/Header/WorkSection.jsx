@@ -14,6 +14,14 @@ import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 import axios from 'axios';
 
+
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
+
 class WorkSection extends React.Component {
   constructor(props) {
     super(props);
@@ -22,23 +30,28 @@ class WorkSection extends React.Component {
         email: '',
         message: ''
       };
-      this.updateField = this.updateField.bind(this);
-    }
-updateField(input, value){
-  this.setState({[input]: value });
-}
-async handleSubmit(event){
-  event.precentDefault();
-  const {name, email, message} = this.state;
+      this.handleSubmit = this.handleSubmit.bind(this);
+      this.handleChange = this.handleChange.bind(this);
 
-  const form = await axios.post ('/api/form', {
-    name,
-    email,
-    message
-  });
-}
+    }
+    handleSubmit = e => {
+          fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+          })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+          e.preventDefault();
+        };
+
+        handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
     render() {
     const { classes } = this.props;
+    const { name, email, message } = this.state;
+
     return (
       <div>
       <div className={classes.centered}> <Button
@@ -54,7 +67,7 @@ async handleSubmit(event){
       ><i className={classes.socials + " fas fa-phone"} />
     </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
-            <form name="contact" method="POST" netlify>
+            <form onSubmit={this.handleSubmit}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
@@ -62,7 +75,7 @@ async handleSubmit(event){
                     id="name"
                     type="text"
                     name="name"
-
+                    value={name} onChange={this.handleChange}
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -74,7 +87,7 @@ async handleSubmit(event){
                     id="email"
                     type="email"
                     name="email"
-
+                    value={email} onChange={this.handleChange}
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -85,6 +98,7 @@ async handleSubmit(event){
                   id="message"
                   type="text"
                   name="message"
+                  value={message} onChange={this.handleChange}
                   formControlProps={{
                     fullWidth: true,
                     className: classes.textArea

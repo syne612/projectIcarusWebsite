@@ -14,9 +14,42 @@ import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
+
 class WorkSection extends React.Component {
+  constructor(props) {
+    super(props);
+      this.state = {
+        name: '',
+        email: '',
+        message: ''
+      };
+
+    }
+    handleSubmit = e => {
+          fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+          })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+          e.preventDefault();
+        };
+
+        handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
   render() {
+
     const { classes } = this.props;
+    const { name, email, message } = this.state;
+
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
@@ -35,38 +68,47 @@ class WorkSection extends React.Component {
             ><i className={classes.socials + " fas fa-phone"} />
           </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
-            <form name="contactW" method="POST" netlify>
-              <GridContainer>
-                <GridItem xs={12} md={6}>
-                  <CustomInput
-                    labelText="Your Name"
-                    id="name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} md={6}>
-                  <CustomInput
-                    labelText="Your Email"
-                    id="email"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
+          <form onSubmit={this.handleSubmit}>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Your Message"
-                  id="message"
+                  labelText="Your Name"
+                  id="name"
+                  type="text"
+                  name="name"
+                  value={name} onChange={this.handleChange}
                   formControlProps={{
-                    fullWidth: true,
-                    className: classes.textArea
-                  }}
-                  inputProps={{
-                    multiline: true,
-                    rows: 5
+                      fullWidth: true
                   }}
                 />
+              </GridItem>
+              <GridItem xs={12} sm={12} md={6}>
+                <CustomInput
+                  labelText="Your Email"
+                  id="email"
+                  type="email"
+                  name="email"
+                  value={email} onChange={this.handleChange}
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
+              </GridItem>
+              <CustomInput
+                labelText="Your Message"
+                id="message"
+                type="text"
+                name="message"
+                value={message} onChange={this.handleChange}
+                formControlProps={{
+                  fullWidth: true,
+                  className: classes.textArea
+                }}
+                inputProps={{
+                  multiline: true,
+                  rows: 5
+                }}
+              />
                   <GridItem xs={12} sm={12} md={4}
                     className={classes.textCenter}
                   >
