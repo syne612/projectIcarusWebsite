@@ -17,7 +17,7 @@ function CustomInput({ ...props }) {
     formControlProps,
     labelText,
     id,
-    value,
+    type,
     name,
     labelProps,
     inputProps,
@@ -73,7 +73,8 @@ function CustomInput({ ...props }) {
         }}
         id={id}
         name={name}
-        value={value}
+        type={type}
+
         {...inputProps}
       />
     </FormControl>
@@ -86,6 +87,7 @@ CustomInput.propTypes = {
   labelProps: PropTypes.object,
   id: PropTypes.string,
   name: PropTypes.string,
+  type: PropTypes.string,
   inputProps: PropTypes.object,
   formControlProps: PropTypes.object,
   inputRootCustomClasses: PropTypes.string,

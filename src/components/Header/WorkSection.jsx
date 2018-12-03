@@ -9,7 +9,7 @@ import classNames from "classnames";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Input from "components/CustomInput/CustomInput.jsx";
+import Input from "@material-ui/core/Input";
 import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 import axios from 'axios';
@@ -95,8 +95,8 @@ class WorkSection extends React.Component {
                   value={emailM}
                   onChange={this.handleChange}
                   formControlProps={{
-                  fullWidth: true
-                }}
+                    fullWidth: true
+                  }}
                 />
                 </GridItem>
                 <Input
