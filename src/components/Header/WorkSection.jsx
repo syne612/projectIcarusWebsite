@@ -26,9 +26,9 @@ class WorkSection extends React.Component {
   constructor(props) {
     super(props);
       this.state = {
-        name: '',
-        email: '',
-        message: ''
+        nameM: '',
+        emailM: '',
+        messageM: ''
       };
       this.handleSubmit = this.handleSubmit.bind(this);
       this.handleChange = this.handleChange.bind(this);
@@ -75,8 +75,8 @@ class WorkSection extends React.Component {
                     labelText="Your Name"
                     id="name"
                     type="text"
-                    name="name"
-                    value={name} onChange={this.handleChange}
+                    name="nameM"
+                    value={nameM} onChange={this.handleChange}
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -87,8 +87,8 @@ class WorkSection extends React.Component {
                     labelText="Your Email"
                     id="email"
                     type="email"
-                    name="email"
-                    value={email} onChange={this.handleChange}
+                    name="emailM"
+                    value={emailM} onChange={this.handleChange}
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -98,8 +98,8 @@ class WorkSection extends React.Component {
                   labelText="Your Message"
                   id="message"
                   type="text"
-                  name="message"
-                  value={message} onChange={this.handleChange}
+                  name="messageM"
+                  value={messageM} onChange={this.handleChange}
                   formControlProps={{
                     fullWidth: true,
                     className: classes.textArea
