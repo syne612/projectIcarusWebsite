@@ -71,47 +71,15 @@ class WorkSection extends React.Component {
     </Button> <p className={classes.description}
 > 704-839-1628 </p></div>
             <form onSubmit={this.handleSubmit}>
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact1" />
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Your Name"
-                    id="name"
-                    type="text"
-                    name="nameM"
-                    value={nameM} onChange={this.handleChange}
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
+                  <input type="text" name="nameM" value={nameM} onChange={this.handleChange} />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Your Email"
-                    id="email"
-                    type="email"
-                    name="emailM"
-                    value={emailM} onChange={this.handleChange}
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
+                <input type="email" name="emailM" value={emailM} onChange={this.handleChange} />
                 </GridItem>
-                <CustomInput
-                  labelText="Your Message"
-                  id="message"
-                  type="text"
-                  name="messageM"
-                  value={messageM} onChange={this.handleChange}
-                  formControlProps={{
-                    fullWidth: true,
-                    className: classes.textArea
-                  }}
-                  inputProps={{
-                    multiline: true,
-                    rows: 5
-                  }}
-                />
+                <textarea name="messageM" value={messageM} onChange={this.handleChange} />
                 <GridContainer justify="center">
                   <GridItem
                     xs={12}
