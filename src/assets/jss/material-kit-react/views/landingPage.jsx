@@ -30,7 +30,20 @@ const landingPageStyle = {
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
-  }
+  },
+  img: {
+    height: "100px",
+    margin: "auto"
+  },
+  card: {
+    backgroundColor: "rgba(139,0,139,.3)",
+    color: "rgb(250,250,250)",
+    fontWeight: "700",
+    width: "400px",
+    margin: "auto !important",
+    boxShadow:
+      "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
+  },
 };
 
 export default landingPageStyle;

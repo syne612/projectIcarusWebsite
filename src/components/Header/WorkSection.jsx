@@ -101,7 +101,7 @@ class WorkSection extends React.Component {
                   />
                 </GridItem>
                 <CustomInput
-                  labelText="Your Message"
+                  labelText="A Brief Message"
                   id="message"
                   type="text"
                   name="message"

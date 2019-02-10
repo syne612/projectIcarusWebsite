@@ -63,71 +63,60 @@ class HeaderLinks extends React.Component {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link
-        to="/gallery"
+        to="/portfolio"
         color="transparent"
         className={classes.navLink}>
-          Gallery
+          Portfolio
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link
-        to="/about-me"
-          color="transparent"
-          className={classes.navLink}
-        >
-          About
-        </Link>
+      <CustomDropdown
+        noLiPadding
+        buttonText="About"
+        buttonProps={{
+          className: classes.navLink,
+          color: "transparent"
+        }}
+
+        dropdownList={[
+          <Link to="/pricing" className={classes.dropdownLink}>
+            Pricing Modal
+          </Link>,
+          <Link to="/about-us" className={classes.dropdownLink}>
+            About Project Icarus
+          </Link>,
+          <Link to="/building" className={classes.dropdownLink}>
+            How We Build
+          </Link>
+        ]}
+      />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-twitter"
-          title="Connect with us on LinkedIn"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://www.linkedin.com/in/ellis-hogan-99a646161/"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-linkedin"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Check out our Github repo's"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://github.com/syne612?tab=repositories"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-github"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on Instagram"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/angel.icarus/"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
-          </Button>
-        </Tooltip>
+        <CustomDropdown
+          noLiPadding
+          buttonText="More Info"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+
+          dropdownList={[
+            <Link to="/partnering" className={classes.dropdownLink}>
+              Partner With Us
+            </Link>,
+            <Link to="/clients" className={classes.dropdownLink}>
+              Our Clients
+            </Link>,
+            <Link to="/projects" className={classes.dropdownLink}>
+              Large Scale Projects
+            </Link>,
+            <Link to="/developer" className={classes.dropdownLink}>
+              Meet the Developer
+            </Link>,
+
+
+          ]}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
       <Button
@@ -135,7 +124,7 @@ class HeaderLinks extends React.Component {
         block
         onClick={() => this.handleClickOpen("classicModal")}
       >
-        <LibraryBooks className={classes.icon} /> Contact
+        <LibraryBooks className={classes.icon} /> Lets Chat!
       </Button>
       <Dialog
         classes={{
