@@ -135,26 +135,26 @@ class BuildingPage extends React.Component {
                               <h2>Basic Code Sites</h2>
                               <h5>Sites coded in basic HTML, CSS, and PHP</h5>
                               <InfoArea
-                                title="MongoDB"
-                                description="Mongo DB is a NoSQL database where all documents are JSON."
+                                title="HTML"
+                                description="HTML is the standard markup language for creating Web pages. It stands for Hypertext Markup Language, and is the baseline for Hypertext transfer protocol (http)."
                                 icon={Bubbles}
                                 iconColor="info"
                               />
                               <InfoArea
-                                title="Express"
-                                description="Express is a framework used to help easily Route paths. It basically works as a server framework."
+                                title="CSS"
+                                description="CSS is a styling language (cascading style sheets) used for basic page styling. A good way to understand what CSS does is to look at craigslist. It has little to none."
                                 icon={Bubbles}
                                 iconColor="rose"
                               />
                               <InfoArea
-                                title="React"
-                                description="React Is a UX/UI library used to create beautiful, reactive, functional web apps"
+                                title="PHP"
+                                description="PHP is a server side language. We use it for our basic sites contact form and other basic server-side needs."
                                 icon={Bubbles}
                                 iconColor="warning"
                               />
                               <InfoArea
-                                title="Node"
-                                description="Node is a type of base for Javascript based web apps. Its an runtime environment built off google chrome."
+                                title="Netlify"
+                                description="Netlify has a ton of amazing features. One feature is contact form handling."
                                 icon={Bubbles}
                                 iconColor="success"
                               />
@@ -171,8 +171,12 @@ class BuildingPage extends React.Component {
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={8}>
                               <h2>Wordpress and other CMS</h2>
-                              <h5>Sites coded in basic HTML, CSS, and PHP</h5>
-
+                              <div className={classes.card}>
+                                <h3>Wordpress</h3>
+                                <p>Wordpress is a type of CMS for mainstream web development. Although word press is not my favorite CMS, it definitely seems to be the most popular. If you have a wordpress site, and need help we can accommodate, as well as build word press sites for you if you so want (although we do advise against it).</p>
+                                <h3>What is a CMS?</h3>
+                                <p>CMS stands for content management system. CMS's are ways to mainstream building. CMS's like word press are great for small business. CMS's like ghost are great for groups who have content writers and web dev's.</p>
+                              </div>
                             </GridItem>
                           </GridContainer>
                           </span>
