@@ -62,22 +62,6 @@ class BuildingPage extends React.Component {
           <div>
             <div className={classes.container}>
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={8}>
-                  <div className={classes.profile}>
-                    <div>
-                    </div>
-                    <div className={classes.name}>
-                      <h3 className={classes.title}></h3>
-                      <h6></h6>
-                    </div>
-                  </div>
-                </GridItem>
-              </GridContainer>
-              <div className={classes.description}>
-                <p>
-                </p>
-              </div>
-              <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12} lg={10} className={classes.navWrapper}>
                   <NavPills
                     alignCenter
@@ -130,10 +114,11 @@ class BuildingPage extends React.Component {
                         tabIcon: Code,
                         tabContent: (
                           <span>
-                          <GridContainer justify="center" >
+                          <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={8}>
                               <h2>Basic Code Sites</h2>
                               <h5>Sites coded in basic HTML, CSS, and PHP</h5>
+                              <div className={classes.card}>
                               <InfoArea
                                 title="HTML"
                                 description="HTML is the standard markup language for creating Web pages. It stands for Hypertext Markup Language, and is the baseline for Hypertext transfer protocol (http)."
@@ -158,6 +143,7 @@ class BuildingPage extends React.Component {
                                 icon={Bubbles}
                                 iconColor="success"
                               />
+                            </div>
                             </GridItem>
                           </GridContainer>
                           </span>
@@ -171,11 +157,11 @@ class BuildingPage extends React.Component {
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={8}>
                               <h2>Wordpress and other CMS</h2>
-                              <div className={classes.card}>
+                              <div>
                                 <h3>Wordpress</h3>
-                                <p>Wordpress is a type of CMS for mainstream web development. Although word press is not my favorite CMS, it definitely seems to be the most popular. If you have a wordpress site, and need help we can accommodate, as well as build word press sites for you if you so want (although we do advise against it).</p>
+                                <h5>Wordpress is a type of CMS for mainstream web development. Although word press is not my favorite CMS, it definitely seems to be the most popular. If you have a wordpress site, and need help we can accommodate, as well as build word press sites for you if you so want (although we do advise against it).</h5>
                                 <h3>What is a CMS?</h3>
-                                <p>CMS stands for content management system. CMS's are ways to mainstream building. CMS's like word press are great for small business. CMS's like ghost are great for groups who have content writers and web dev's.</p>
+                                <h5>CMS stands for content management system. CMS's are ways to mainstream building. CMS's like word press are great for small business. CMS's like ghost are great for groups who have content writers and web dev's.</h5>
                               </div>
                             </GridItem>
                           </GridContainer>
