@@ -89,7 +89,7 @@ class Features extends React.Component {
                 /></div>
                 <div className={classes.height}><InfoArea
                   title="Wordpress"
-                  description="Perfect for people who want to be able to manage their own content. We offer (but usually don't recommend) Wordpress sites."
+                  description="Perfect for people who want to be able to manage their own content. We offer (but usually don't recommend) building, and managing Wordpress sites."
                   icon={Extension}
                   iconColor="info"
                 /></div>
@@ -114,7 +114,7 @@ class Features extends React.Component {
               </CardHeader>
                 <div className={classes.height}><InfoArea
                   title="eCommerce"
-                  description="CMS and MERN eCommerce web apps available."
+                  description="CMS and MERN eCommerce web apps available, as well as WooCommerce, and custom built eCommerce using Shopify or Amazon api."
                   icon={Cart}
                   iconColor="warning"
                 /></div>
@@ -126,7 +126,7 @@ class Features extends React.Component {
                 /></div>
                 <div className={classes.height}><InfoArea
                   title="React/MERN Apps"
-                  description="My sites are built to be responsive. So no matter what device view-port you look at it on, its going to look good."
+                  description="For faster more powerful sites, we offer React UI as well as MERN web apps, a custom look has never loaded faster."
                   icon={Widgets}
                   iconColor="info"
                 /></div>
