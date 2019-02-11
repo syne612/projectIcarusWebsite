@@ -58,7 +58,7 @@ class BuildingPage extends React.Component {
         />
         <Parallax small filter image={require("assets/img/bg2.jpg")} />
 
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classNames(classes.main, classes.mainRaised, classes.pill)}>
           <div>
             <div className={classes.container}>
               <GridContainer justify="center">
@@ -82,25 +82,25 @@ class BuildingPage extends React.Component {
                               <InfoArea
                                 title="MongoDB"
                                 description="Mongo DB is a NoSQL database where all documents are JSON."
-                                icon={Bubbles}
+                                icon={Blur}
                                 iconColor="info"
                               />
                               <InfoArea
                                 title="Express"
                                 description="Express is a framework used to help easily Route paths. It basically works as a server framework."
-                                icon={Bubbles}
+                                icon={Blur}
                                 iconColor="rose"
                               />
                               <InfoArea
                                 title="React"
                                 description="React Is a UX/UI library used to create beautiful, reactive, functional web apps"
-                                icon={Bubbles}
+                                icon={Blur}
                                 iconColor="warning"
                               />
                               <InfoArea
                                 title="Node"
                                 description="Node is a type of base for Javascript based web apps. Its an runtime environment built off google chrome."
-                                icon={Bubbles}
+                                icon={Blur}
                                 iconColor="success"
                               />
                               </div>
@@ -122,25 +122,25 @@ class BuildingPage extends React.Component {
                               <InfoArea
                                 title="HTML"
                                 description="HTML is the standard markup language for creating Web pages. It stands for Hypertext Markup Language, and is the baseline for Hypertext transfer protocol (http)."
-                                icon={Bubbles}
+                                icon={Blur}
                                 iconColor="info"
                               />
                               <InfoArea
                                 title="CSS"
                                 description="CSS is a styling language (cascading style sheets) used for basic page styling. A good way to understand what CSS does is to look at craigslist. It has little to none."
-                                icon={Bubbles}
+                                icon={Blur}
                                 iconColor="rose"
                               />
                               <InfoArea
                                 title="PHP"
                                 description="PHP is a server side language. We use it for our basic sites contact form and other basic server-side needs."
-                                icon={Bubbles}
+                                icon={Blur}
                                 iconColor="warning"
                               />
                               <InfoArea
                                 title="Netlify"
                                 description="Netlify has a ton of amazing features. One feature is contact form handling."
-                                icon={Bubbles}
+                                icon={Blur}
                                 iconColor="success"
                               />
                             </div>
