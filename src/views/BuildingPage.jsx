@@ -75,8 +75,8 @@ class BuildingPage extends React.Component {
                         tabButton: "MERN Web Apps",
                         tabIcon: Widgets,
                         tabContent: (
-                          <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={8}>
+                          <GridContainer justify="center" className={classes.pill}>
+                            <GridItem xs={12} sm={12} md={8} className={classes.pill}>
                               <h2>MERN and other Node.js Web Apps</h2>
                               <div className={classes.card}>
                               <InfoArea

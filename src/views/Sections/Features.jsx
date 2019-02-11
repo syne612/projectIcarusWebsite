@@ -50,30 +50,30 @@ class Features extends React.Component {
               <CardHeader color="primary">
                 <h4>Hosting</h4>
               </CardHeader>
-                <InfoArea
+                <div className={classes.height}><InfoArea
                   title="Server Hosting"
                   description="We have hosting for all types of servers from basic cpanel and wordpress to more complicated things like web app hosting."
                   icon={Server}
                   iconColor="info"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="Security"
                   description="Https security is avalible as well as encryption for all user logins."
                   icon={Https}
                   iconColor="rose"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="Database Hosting"
                   description="Want to have users, or host 3rd party content? No problem! We offer hosting for all types of databases."
                   icon={Dns}
                   iconColor="warning"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="Git Repositories"
                   description="All sites are created out of repos for an easy and streamlined experience that makes workflow efficient."
                   icon={Bubbles}
                   iconColor="success"
-                />
+                /></div>
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
@@ -81,30 +81,30 @@ class Features extends React.Component {
               <CardHeader color="primary">
                 <h4>Basic Websites</h4>
               </CardHeader>
-                <InfoArea
+                <div className={classes.height}><InfoArea
                   title="HTML/CSS"
                   description="A simple, easy and cost efficient way to get your content out there. Great for simple projects nd things like landing pages."
                   icon={Code}
                   iconColor="success"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="Wordpress"
                   description="Perfect for people who want to be able to manage their own content. We offer (but usually don't recommend) Wordpress sites."
                   icon={Extension}
                   iconColor="info"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="Contact Forms"
                   description="My sites are built to be responsive. So no matter what device view-port you look at it on, its going to look good."
                   icon={Announcement}
                   iconColor="rose"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="Responsive Design"
                   description="My sites are built to be responsive. So no matter what device view-port you look at it on, its going to look good."
                   icon={ImportantDevices}
                   iconColor="warning"
-                />
+                /></div>
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
@@ -112,30 +112,30 @@ class Features extends React.Component {
               <CardHeader color="primary">
                 <h4>Web and Mobile Apps</h4>
               </CardHeader>
-                <InfoArea
+                <div className={classes.height}><InfoArea
                   title="eCommerce"
                   description="CMS and MERN eCommerce web apps available."
                   icon={Cart}
                   iconColor="warning"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="Login Forms"
                   description="Built and managed log in forms."
                   icon={ExitToApp}
                   iconColor="success"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="React/MERN Apps"
                   description="My sites are built to be responsive. So no matter what device view-port you look at it on, its going to look good."
                   icon={Widgets}
                   iconColor="info"
-                />
-                <InfoArea
+                /></div>
+                <div className={classes.height}><InfoArea
                   title="Database and Servers"
                   description="My sites are built to be responsive. So no matter what device view-port you look at it on, its going to look good."
                   icon={SettingsSystemDaydream}
                   iconColor="rose"
-                />
+                /></div>
             </Card>
           </GridItem>
 

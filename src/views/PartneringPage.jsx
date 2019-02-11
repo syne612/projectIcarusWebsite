@@ -52,7 +52,7 @@ class PartneringPage extends React.Component {
 
                 <CardBody className={classes.imgRaised, classes.card}>
                 <h1 className={classes.title}>Partnering With Us</h1>
-                <h3>Not much to see here but feel free to check out our github (click the link below) and/or get in contact about collaborating!</h3>
+                <h3>Not much to see here yet, but but if your interested in partnering with us feel free to get in contact, or check out our github (click the link below). We look forward to collaborating!</h3>
                   <a href="https://github.com/syne612">
                       <img className={classes.img} src={github} />
                   </a>
