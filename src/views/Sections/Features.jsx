@@ -95,7 +95,7 @@ class Features extends React.Component {
                 /></div>
                 <div className={classes.height}><InfoArea
                   title="Contact Forms"
-                  description="My sites are built to be responsive. So no matter what device view-port you look at it on, its going to look good."
+                  description="For all your basic back end needs (and contact forms seem to be a what most people need) we have you covered, on any platform; with field sterilization and checks."
                   icon={Announcement}
                   iconColor="rose"
                 /></div>
@@ -132,7 +132,7 @@ class Features extends React.Component {
                 /></div>
                 <div className={classes.height}><InfoArea
                   title="Database and Servers"
-                  description="My sites are built to be responsive. So no matter what device view-port you look at it on, its going to look good."
+                  description="Express and MongoDB are pretty big go too's but we can Manage SQL/MySql as well."
                   icon={SettingsSystemDaydream}
                   iconColor="rose"
                 /></div>
