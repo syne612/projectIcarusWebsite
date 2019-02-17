@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import withStyles from "@material-ui/core/styles/withStyles";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyleM.jsx";
 import classNames from "classnames";
+import Button from "components/CustomButtons/Button.jsx";
 
 
 class PictureMoving5 extends React.Component {
@@ -13,35 +14,35 @@ class PictureMoving5 extends React.Component {
     const settings = {
       centerMode: true,
       infinite: true,
-      className: classes.center,
+      dots: true,
+      arrows: true,
+      className: classes.centerLining,
       centerPadding: "60px",
-      slidesToShow: 4,
+      slidesToShow: 3,
       speed: 500
     };
     const cls = {
-      className: classNames(classes.projects)
+      className: classes.projects
     }
     return (
       <div>
         <Slider {...settings} >
           <div {...cls}>
-            <h3 >1</h3>
+            <h3 >Sweat Lock</h3>
           </div>
           <div {...cls}>
-            <h3>2</h3>
+            <h3>BASG</h3>
           </div>
           <div {...cls}>
-            <h3>3</h3>
+            <h3>LW Land</h3>
           </div>
           <div {...cls}>
-            <h3>4</h3>
+            <h3>Stratifyd</h3>
           </div>
           <div {...cls}>
-            <h3>5</h3>
+            <h3>Treehouse Vineyards</h3>
           </div>
-          <div {...cls}>
-            <h3>6</h3>
-          </div>
+
         </Slider>
       </div>
     );

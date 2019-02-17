@@ -19,7 +19,7 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 import SectionCarousel2 from "./Sections/SectionCarousel2.jsx";
-import ProjectsSection from "./Sections/ProjectsSection.jsx";
+import WorkWithSection from "./Sections/WorkWithSection.jsx";
 import PricingSection from "./Sections/PricingSection.jsx";
 
 
@@ -59,9 +59,8 @@ class HomePage extends React.Component {
 
         <div className={classNames(classes.main, classes.mainRaised)}>
           <PricingSection />
-          <ProjectsSection />
-          <SectionCarousel2 />
           <TeamSection />
+          <WorkWithSection />
           <WorkSection />
         </div>
         <Footer />

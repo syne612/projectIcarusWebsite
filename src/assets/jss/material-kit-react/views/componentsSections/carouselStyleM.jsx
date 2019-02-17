@@ -9,9 +9,12 @@ const carouselStyleM = {
     marginLeft: "auto !important",
     marginRight: "auto !important"
   },
-  center:{
-    margin: "0px auto",
-    align: "center"
+  centerLining:{
+    margin: "auto !important",
+    textAlign: "center",
+    float: "center !important",
+    display: "block",
+
   },
   one: {
     marginLeft: "0% !important"
@@ -38,11 +41,18 @@ const carouselStyleM = {
     margin: "0px"
   },
   projects: {
+    display: "block",
     color: "000000",
+    width: "300px !important",
+    height: "300px",
+    borderRadius: "8px",
+    padding: "15px !important",
     boxShadow: "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
-    width: "100%",
-    height: "100px",
-    margin: "0px"
+    marginBottom: "35px !important",
+    marginLeft: "auto !important",
+    marginRight: "auto !important",
+    textAlign: "center",
+
   }
 };
 
