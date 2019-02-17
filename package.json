@@ -1,6 +1,6 @@
 {
-  "name": "Project Icarus",
-  "version": "1.4.0",
+  "name": "Project-Icarus",
+  "version": "3.0.1",
   "description": "For all your web development needs there is Project Icarus.",
   "private": true,
   "main": "dist/index.js",
