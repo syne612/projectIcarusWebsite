@@ -58,12 +58,14 @@ const landingPageStyle = {
     backgroundColor: "#93d4db",
     textAlign: "center"
   },
+  cardBody {
+    height: "230px",
+  },
   card2: {
     backgroundColor: "rgba(147, 112, 219, 0.55)",
     color: "rgb(250,250,250)",
     fontWeight: "700",
     margin: "auto !important",
-    height: "230px",
     boxShadow:
       "0 16px 24px 2px rgba(255, 255, 255, 0.14), 0 6px 30px 5px rgba(255, 255, 255, 0.12), 0 8px 10px -5px rgba(255, 255, 255, 0.2)"
   },
