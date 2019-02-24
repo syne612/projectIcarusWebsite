@@ -63,7 +63,7 @@ const landingPageStyle = {
     margin: "auto"
   },
   card2: {
-    backgroundColor: "rgba(147, 112, 219, 0.65)",
+    backgroundColor: "rgba(140, 107, 209, 0.65)",
     color: "rgb(250,250,250)",
     fontWeight: "700",
     margin: "auto !important",
