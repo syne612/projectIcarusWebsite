@@ -1,5 +1,5 @@
 {
-  "name": "Project-Icarus",
+  "name": "project-icarus",
   "version": "3.0.1",
   "description": "For all your web development needs there is Project Icarus.",
   "private": true,
@@ -10,7 +10,7 @@
     "classnames": "2.2.6",
     "history": "4.7.2",
     "moment": "2.24.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "4.11.0",
     "nouislider": "13.1.0",
     "prop-types": "15.7.1",
     "react": "16.8.1",
@@ -19,7 +19,9 @@
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.5",
     "react-slick": "0.23.2",
-    "react-swipeable-views": "0.13.1"
+    "react-swipeable-views": "0.13.1",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-prettier": "3.0.1"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -55,5 +57,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icarus612/projectIcarusWebsite.git"
+  },
+  "author": "Ellis Hogan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icarus612/projectIcarusWebsite/issues"
+  },
+  "homepage": "https://github.com/icarus612/projectIcarusWebsite#readme"
 }
