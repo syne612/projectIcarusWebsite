@@ -59,7 +59,7 @@ const landingPageStyle = {
     textAlign: "center"
   },
   cardBody2: {
-    height: "200px"
+    height: "130px"
   },
   card2: {
     backgroundColor: "rgba(147, 112, 219, 0.55)",
@@ -72,6 +72,9 @@ const landingPageStyle = {
   cardFooter: {
     margin: "auto !important",
     textAlign: "center"
+  },
+  parallax: {
+    height: "1000px"
   }
 };
 

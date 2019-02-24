@@ -45,7 +45,7 @@ class ProjectsPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/bg7.jpg")}>
+        <Parallax filter image={require("assets/img/bg7.jpg")} className={classes.parallax}>
           <div className={classes.container}>
             <GridContainer justify="center">
 
