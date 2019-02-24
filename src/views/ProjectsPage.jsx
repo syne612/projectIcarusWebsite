@@ -65,7 +65,7 @@ class ProjectsPage extends React.Component {
                     >
                       <h4>Landing Page Themes</h4>
                     </CardHeader>
-                    <CardBody className={classes.cardBody}>
+                    <CardBody className={classes.cardBody2}>
                       <p className={classes.ptag}>
                         This is a project dedicated to all of the landing page themes I have created. From basic html and css landing pages to more robust things created in react to be incorporated into your own project.
                       </p>
@@ -98,7 +98,7 @@ class ProjectsPage extends React.Component {
                     >
                       <h4>3d CSS Project</h4>
                     </CardHeader>
-                    <CardBody className={classes.cardBody}>
+                    <CardBody className={classes.cardBody2}>
                       <p className={classes.ptag}>
                         Started on a whim one day. The idea of basic virtual worlds and what could be created from CSS 3d modeling. Built from basic HTML and CSS. Animated with AnimeJS.
                       </p>
@@ -132,7 +132,7 @@ class ProjectsPage extends React.Component {
                     >
                       <h4>Project Daedalus</h4>
                     </CardHeader>
-                    <CardBody className={classes.cardBody}>
+                    <CardBody className={classes.cardBody2}>
                       <p className={classes.ptag}>
                         This is a place deticated to the great master Daedalus. This project is a set of Smaller Repos, and Gists. A place for all my tinkerings and functions.
                       </p>
