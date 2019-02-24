@@ -134,6 +134,7 @@ class ProjectsPage extends React.Component {
                     </CardHeader>
                     <CardBody>
                       <p className={classes.ptag}>
+                        This is a place deticated to the great master Daedalus. This project is a set of Smaller Repos, and Gists. A place for all my tinkerings and functions.
                       </p>
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
