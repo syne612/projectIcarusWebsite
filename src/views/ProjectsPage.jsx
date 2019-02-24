@@ -81,7 +81,7 @@ class ProjectsPage extends React.Component {
                           <i className={"fab fa-github"} /> Github
                         </Button>
                       </a>
-                      <a href={"projects/info"}>
+                      <a href={"projects/themes"}>
                         <Button simple color="rose" size="lg">
                           More Info
                         </Button>
@@ -96,7 +96,7 @@ class ProjectsPage extends React.Component {
                     <CardHeader
                       className={classes.cardHeader2}
                     >
-                      <h4>3D CSS Project</h4>
+                      <h4>3d CSS Project</h4>
                     </CardHeader>
                     <CardBody>
                       <p className={classes.ptag}>
@@ -114,7 +114,7 @@ class ProjectsPage extends React.Component {
                           <i className={"fab fa-github"} /> Github
                         </Button>
                       </a>
-                      <a href={"projects/info"}>
+                      <a href={"projects/3dCSS"}>
                         <Button simple color="rose" size="lg">
                           More Info
                         </Button>
@@ -148,7 +148,7 @@ class ProjectsPage extends React.Component {
                           <i className={"fab fa-github"} /> Github
                         </Button>
                       </a>
-                      <a href={"projects/info"}>
+                      <a href={"projects/Daedalus"}>
                         <Button simple color="rose" size="lg">
                           More Info
                         </Button>
