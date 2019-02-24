@@ -26,3 +26,7 @@ yarn-error.log*
 /dist
 # compiled css
 *.css
+
+# git files
+*.git
+
