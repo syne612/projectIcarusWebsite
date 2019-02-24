@@ -39,11 +39,37 @@ const landingPageStyle = {
     backgroundColor: "rgba(139,0,139,.3)",
     color: "rgb(250,250,250)",
     fontWeight: "700",
-    width: "400px",
     margin: "auto !important",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
   },
+  cardHeader2: {
+    color: "rgb(147, 112, 119)",
+    backgroundColor: "#4ddb93",
+    textAlign: "center"
+  },
+  cardHeader3: {
+    color: "rgb(147, 112, 119)",
+    backgroundColor: "#db934d",
+    textAlign: "center"
+  },
+  cardHeader1: {
+    color: "rgb(147, 112, 119)",
+    backgroundColor: "#93d4db",
+    textAlign: "center"
+  },
+  card2: {
+    backgroundColor: "rgba(147, 112, 219, 0.4)",
+    color: "rgb(250,250,250)",
+    fontWeight: "700",
+    margin: "auto !important",
+    boxShadow:
+      "0 16px 24px 2px rgba(255, 255, 255, 0.14), 0 6px 30px 5px rgba(255, 255, 255, 0.12), 0 8px 10px -5px rgba(255, 255, 255, 0.2)"
+  },
+  cardFooter: {
+    margin: "auto !important",
+    textAlign: "center"
+  }
 };
 
 export default landingPageStyle;

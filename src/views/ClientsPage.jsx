@@ -17,7 +17,7 @@ import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
-import SectionCarousel from "./Sections/SectionCarousel.jsx";
+import WorkWithSection from "./Sections/WorkWithSection.jsx";
 
 import profile from "assets/img/Ellis.jpg";
 
@@ -49,10 +49,13 @@ class ClientsPage extends React.Component {
           {...rest}
         />
         <img className={classes.coolBg} src={background} />
+        <br />
         <div className={classes.main2}>
-          <SectionCarousel />
+          <WorkWithSection />
           <Footer />
         </div>
+
+
       </div>
 
     );

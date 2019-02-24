@@ -52,6 +52,7 @@ const carouselStyleM = {
     marginLeft: "auto !important",
     marginRight: "auto !important",
     textAlign: "center",
+    backgroundColor: "rgba(255, 255, 255, .5)"
 
   }
 };

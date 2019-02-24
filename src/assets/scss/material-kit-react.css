@@ -903,7 +903,7 @@ button.slick-arrow.slick-next {
   background: transparent;
   width: 15%;
   z-index: 2;
-  opacity: 0.5; }
+  opacity: 0.8; }
 
 .slick-prev {
   left: 0; }
@@ -918,7 +918,7 @@ button.slick-arrow.slick-next {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
-    color: white;
+    color: #BA55D3;
     font-size: 30px;
     width: 100%; }
 
@@ -935,7 +935,7 @@ button.slick-arrow.slick-next {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
-    color: #FFF;
+    color: #BA55D3;
     font-size: 30px;
     width: 100%; }
 
